@@ -1,83 +1,116 @@
 .bigelow-rules-regular {
-    font-family: "Bigelow Rules", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+	font-family: "Bigelow Rules", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 header {
-    background-color: #242633; 
+	background-color: #242633;
 	#logo {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		justify-self: center;
-        width: 215.31px;	
-        height: 80px;
-           
+		width: 215.31px;
+		height: 80px;
 	}
 	nav {
-        background-color: #10141B;
+		background-color: #10141b;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-        font-family: "Bigelow Rules", serif;
-        font-size: 160px , 60px;
-        padding-left: 20px;
-        padding-right: 20px;
+		font-family: "Bigelow Rules", serif;
+		font-size: 40px;
+		padding-left: 50px;
+		padding-right: 45px;
+		&:hover {
+			text-decoration: rgb(140, 35, 205) wavy underline;
+			font-size: 50px;
+		}
 	}
 }
-body{
-    margin: 0px;
-    background-color: #433C87;
-    main{
-        display: flex;
-        flex-direction:row ;
-        
-    }
-    #main_container{
-        display: flex;
-        flex-direction: row;
-        justify-items: space-between;
-    }
-    #left{
-        background: linear-gradient(#433C87, white);
-        padding-left: 70px;
-        width: 563px;
-        height: 752px;
-        img{
-            width: 375px;
-            height: 171px;
-            margin-bottom: 15px;
-        }
-        #texte{
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            width: 350px;
-            height: 185px;
-            button{
-                border-radius: 10px;
-                width: 350px;
-                height: 74px;
-                background-color: #433C87;
-                &:hover{
-                    background-color: #8B81EC;
-                }
-            }
-        }
-    }
-    #right{
-        margin-left: 50px;
-        width:728px;
-        height: 752px;
-        img{
-            width: 280px;
-            height: 280px;
-        }
-    }
+body {
+	margin: 0px;
+	background-color: #433c87;
+	main {
+		display: flex;
+		flex-direction: row;
+	}
+	#main_container {
+		display: flex;
+		flex-direction: row;
+		justify-items: space-between;
+		height: 1032px;
+		background: linear-gradient(#433c87, white),
+			url("/Images/main_backgroundpng.png");
+	}
+	#left {
+		background: linear-gradient(#433c87, white);
+		margin-left: 70px;
+		padding-left: 70px;
+		width: 563px;
+		height: 752px;
+		align-content: center;
+		img {
+			width: 375px;
+			height: 171px;
+			margin-bottom: 15px;
+		}
+		#texte {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			width: 350px;
+			height: 185px;
+			button {
+				border-radius: 10px;
+				width: 350px;
+				height: 74px;
+				background-color: #433c87;
+				&:hover {
+					background-color: #8b81ec;
+					width: 400px;
+					text-decoration: rgb(207, 205, 208) underline;
+				}
+			}
+		}
+	}
+	#right {
+		background-image: url("/Images/losange.png");
+		margin-left: 400px;
+		width: 728px;
+		height: 775px;
+		align-content: center;
+		img {
+			width: 280px;
+			height: 280px;
+		}
+	}
 }
-footer{
-    background-color: black;
-    align-content: center;
-    justify-content: center;
+footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: black;
+	align-content: center;
+	justify-content: center;
+	padding-left: 144px;
+	padding-right: 144px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	#footer {
+		border: 2px;
+		border-color: azure;
+		border-style: solid;
+	}
+	#reseaux {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&:hover {
+			font-size: larger;
+			color: rgb(197, 17, 213);
+		}
+	}
 }
