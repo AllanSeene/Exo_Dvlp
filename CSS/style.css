@@ -1,0 +1,83 @@
+.bigelow-rules-regular {
+    font-family: "Bigelow Rules", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+header {
+    background-color: #242633; 
+	#logo {
+        display: flex;
+        flex-direction: column;
+		justify-self: center;
+        width: 215.31px;	
+        height: 80px;
+           
+	}
+	nav {
+        background-color: #10141B;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+        font-family: "Bigelow Rules", serif;
+        font-size: 160px , 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+	}
+}
+body{
+    margin: 0px;
+    background-color: #433C87;
+    main{
+        display: flex;
+        flex-direction:row ;
+        
+    }
+    #main_container{
+        display: flex;
+        flex-direction: row;
+        justify-items: space-between;
+    }
+    #left{
+        background: linear-gradient(#433C87, white);
+        padding-left: 70px;
+        width: 563px;
+        height: 752px;
+        img{
+            width: 375px;
+            height: 171px;
+            margin-bottom: 15px;
+        }
+        #texte{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            width: 350px;
+            height: 185px;
+            button{
+                border-radius: 10px;
+                width: 350px;
+                height: 74px;
+                background-color: #433C87;
+                &:hover{
+                    background-color: #8B81EC;
+                }
+            }
+        }
+    }
+    #right{
+        margin-left: 50px;
+        width:728px;
+        height: 752px;
+        img{
+            width: 280px;
+            height: 280px;
+        }
+    }
+}
+footer{
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+}
